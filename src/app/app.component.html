@@ -1,0 +1,28 @@
+<BottomNavigation>
+    <TabStrip>
+        <TabStripItem class="navigation__item">
+            <Label text="Home"></Label>
+            <Image src="font://&#xf015;" class="fas t-36"></Image>
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="Demo"></Label>
+            <Image src="font://&#xf6cf;" class="far t-36"></Image>
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="About"></Label>
+            <Image src="font://&#xf129;" class="fas t-36"></Image>
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem>
+        <page-router-outlet name="homeTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="demoTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="aboutTab"></page-router-outlet>
+    </TabContentItem>
+</BottomNavigation>

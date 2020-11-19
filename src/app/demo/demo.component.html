@@ -1,0 +1,30 @@
+<ActionBar>
+    <Label text="Demo"></Label>
+</ActionBar>
+
+<!-- <GridLayout class="page__content">
+    <StackLayout>
+        <Button class="btn btn-primary" text="It's not working" [nsRouterLink]="['/gestures']" (tap)="click()"></Button>
+    </StackLayout>
+</GridLayout> -->
+
+<GridLayout rows="auto, auto, *">
+	<Label row="0" class="target mrgn-tp-sm" text="Touch me for a dialog!"
+		(tap)="onAction('tap', true)"
+		(doubleTap)="onAction('doubleTap', true)"
+		(longPress)="onAction('longPress', true)"
+		(swipe)="onSwipe($event)"
+		(pan)="onAction('pan', true)"
+		(pinch)="onAction('pinch', true)"
+		(rotation)="onAction('rotation', true)">
+    </Label>
+	<Label row="1" class="target mrgn-tp-sm" text="Touch me for a snackbar!"
+		(tap)="onAction('tap', false)"
+		(doubleTap)="onAction('doubleTap', false)"
+		(longPress)="onAction('longPress', false)"
+		(swipe)="onSwipe($event)"
+		(pan)="onAction('pan', false)"
+		(pinch)="onAction('pinch', false)"
+		(rotation)="onAction('rotation', false)">
+    </Label>
+</GridLayout>
